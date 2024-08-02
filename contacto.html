@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="./index.html" class="logo">la alemana</a>
+            <ul class="menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./catalogo.html">Catálogo</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="portada">
+        <h1>Contacto</h1>
+    </section>
+
+    <section>
+
+ <div class="atCliente">
+    <p>Comunicate con nuestras sucursales de 9 a 21hs al (02284) 15-999999</p>
+    <p>o envianos tu consulta con tus datos personales y te responderemos a la brevedad</p>
+</div>
+        <div class="contenedorGeneral">
+
+            <div class="formContainer">
+                <form class="formulario" id="format">
+
+                    <p>Nombre</p>
+                    <input type="text" value="" id="nombre" placeholder="Juan" required pattern="[a-zA-Z\s]+">
+                    <p>Apellido</p>
+                    <input type="text" value="" id="apellido" placeholder="Sánchez"
+                     required pattern="[a-zA-Z\s]+">
+                    <p>Teléfono</p>
+                    <input type="number" value="" id="telefono" minlength="10" maxlength="10" placeholder="2284253698" required pattern="[0-9]{10}" >
+                    <p>Correo electrónico</p>
+                    <input type="email" value="" id="email"
+                        placeholder="juan.sanchez@tumail.com" required>
+                    <p>Mensaje</p>
+                    <textarea type="text" value="" id="mensaje" required pattern="[a-zA-Z\s]+"></textarea>
+                    <div class="btnContainer">
+                        <button type="submit" id="enviar" class="btnSend">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="titulo-footer">
+            <a href="./index.html">LA ALEMANA</a>
+            <p>Un legado de calidad</p>
+        </div>
+        <div>
+            <p>Links útiles</p>
+            <a href="./index.html">Inicio</a>
+            <a href="./catalogo.html">Catálogo</a>
+            <a href="./contacto.html">Contacto</a>
+
+        </div>
+        <div class="redes">
+            <p>Seguinos en nuestras redes</p>
+            <div class="social-container">
+                <i><a href="https://es-la.facebook.com/"><img src="./Img/icons8-facebook-48.png" alt="Facebook"></a></i>
+                <i><a href="https://www.instagram.com/"><img src="./Img/instagram.png" alt="Instagram"></a></i>
+                <i><a href="https://web.whatsapp.com/"><img src="./Img/wapp logo.png" alt="Whatsapp"></a></i>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+        integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./form.js"></script>
+</body>
+
+</html>

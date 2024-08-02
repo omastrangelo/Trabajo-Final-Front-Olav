@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-variant: petite-caps;
+}
+
+/* nav bar */
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffc55a;
+}
+
+.menu,
+li,
+a {
+    display: flex;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Contenido inicio */
+
+.portada {
+    display: flex;
+    height: 400px;
+    background-size: cover;
+    background-image: url(./Img/vol1000.jpeg);
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1 {
+    margin: 60px;
+    font-size: 30px;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.presentacion,
+.clientes {
+    margin: 0 100px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.comunidad,
+.ubicacion {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.comunidad {
+    background-color: #ffc55a;
+    padding: 50px 0px 50px 0px;
+}
+
+/* Galería de imágenes de clientes */
+
+.cajaImagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.imagen {
+    width: 600px;
+    height: 350px;
+    margin: 20px
+}
+
+/* Sucursales */
+
+.direcciones {
+    display: flex;
+    justify-content: center;
+}
+
+.direcciones ul {
+    list-style-type: circle;
+}
+
+.direcciones li {
+    display: list-item;
+    text-align: left;
+}
+
+/* Botón que lleva al catálogo */
+
+.btnCat {
+    background-color: #ffc55a;
+    border-radius: 5px;
+    font-variant: petite-caps;
+    margin-top: 15px;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #b2e7cd;
+    height: 150px;
+    margin-top: 100px;
+
+}
+
+.titulo-footer {
+    align-content: center;
+    font-weight: bold;
+}
+
+
+.social-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer img{
+    width: 36px;
+}
+
+/* Cards catálogo */
+
+.total{
+    font-weight: bold;
+    margin: 30px 0px 0px 30px;
+}
+
+.cardContainer {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card {
+    background-color: #ffc55a;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 57%);
+    margin: 30px;
+    padding: 20px;
+    height: 350px;
+    width: 200px;
+    text-align: center;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.card h2 {
+    font-size: medium;
+    margin: 5px 0;
+}
+.card p {
+    color: #555;
+    font-size: medium;
+}
+.card input[type="number"] {
+    width: 70px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.card button {
+    background-color: #b2e7cd;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.card button:hover {
+    background-color: #b2e7cd;
+}
+
+/* Formulario */
+
+.contenedorGeneral {
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    
+}
+
+.formulario {
+    height: 600px;
+    width: 400px;
+    border: 2px solid black;
+    padding: 30px 100px 30px 100px;
+    background-color: #ffc55a;
+    border-radius: 5px;
+}
+
+form input {
+    width: 400px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    height: 100px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.btnContainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btnSend {
+    background-color: #b2e7cd;
+    border-radius: 5px;
+    font-variant: petite-caps;
+    margin-top: 15px;
+}
+
+/* texto de contacto */
+
+.atCliente {
+    margin-top: 50px;
+    text-align: center;
+}
