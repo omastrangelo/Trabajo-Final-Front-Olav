@@ -15,7 +15,7 @@ for (let i = 0; i < productos.length; i++) {
                     <h2>${productos[i]}</h2>
                     <p>Precio: $${precios[i]}</p>
                     <p>Stock: <span id="stock${i}">${stock[i]}</span></p>
-                    <input type="number" id="entrada${i}" value="0" placeholder="Cantidad">
+                    <input type="number" id="entrada${i}" value="0"  placeholder="Cantidad">
                     <button id="btn${i}">Comprar</button>
                 </div>`
 }
@@ -26,14 +26,17 @@ function comprar(index) {
     const entradaHTML = document.getElementById(`entrada${index}`);
     const stockProd = parseInt(stockHTML.textContent);
     const cantidad = parseInt(entradaHTML.value);
-        if (cantidad > 0 && cantidad <= stockProd) {
-        stockHTML.textContent = stockProd-cantidad;
-        entradaHTML.value= "";
-        total += precios[index] * cantidad;
-        compraTotal.textContent= total;
-        alert("Compra realizada exitosamente");
-        }else{
-        alert("Cantidad no valida. Debe ser mayor a 0 y menor o igual al stock");
+        if (!isNaN(cantidad) && cantidad > 0 && cantidad <= stockProd && cantidad == entradaHTML.value) {
+            stockHTML.textContent = stockProd-cantidad;
+            entradaHTML.value= "";
+            total += precios[index] * cantidad;
+            compraTotal.textContent= total;
+            alert("Compra realizada exitosamente");
+        }else if (stockProd == 0){
+            alert("No hay mas stock");
+        }
+        else{
+            alert("Cantidad no valida. Debe ser mayor a 0 y menor o igual al stock")
         }
 }
 
