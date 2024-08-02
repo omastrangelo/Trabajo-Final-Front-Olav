@@ -84,7 +84,12 @@ h2 {
 .imagen {
     width: 600px;
     height: 350px;
-    margin: 20px
+    margin: 20px;
+    opacity: 0.8;
+}
+
+.imagen:hover{
+    opacity:1;
 }
 
 /* Sucursales */
@@ -143,6 +148,7 @@ footer img{
 .total{
     font-weight: bold;
     margin: 30px 0px 0px 30px;
+    text-decoration: underline;
 }
 
 .cardContainer {
@@ -190,9 +196,33 @@ footer img{
     cursor: pointer;
     margin-top: 10px;
     border-radius: 5px;
+    font-variant: petite-caps;
 }
 .card button:hover {
     background-color: #b2e7cd;
+}
+
+.containerCompra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btnFinalizar{
+    font-size: 15px;
+    height: 42px;
+    width: 100px;
+    background-color: #ffc55a;
+    border-radius: 5px;
+    font-variant: petite-caps;
+    margin-top: 15px;
+}
+
+.btnFinalizar:hover{
+    height: 45px;
+    width: 110px;
+
 }
 
 /* Formulario */

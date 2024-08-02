@@ -31,7 +31,7 @@ function comprar(index) {
             entradaHTML.value= "";
             total += precios[index] * cantidad;
             compraTotal.textContent= total;
-            alert("Compra realizada exitosamente");
+            alert("Producto agregado al carrito");
         }else if (stockProd == 0){
             alert("No hay mas stock");
         }
@@ -46,3 +46,9 @@ function comprar(index) {
         comprar(i)
     })
 }
+
+let finalizarCompra = document.getElementById("btnFinalizarCompra")
+
+finalizarCompra.addEventListener("click", ()=>{
+    alert("Finalizaste tu compra con exito")
+})
