@@ -38,6 +38,7 @@ function comprar(index) {
         else{
             alert("Cantidad no valida. Debe ser mayor a 0 y menor o igual al stock")
         }
+
 }
 
 /* se crea un evento  de tipo de escuchar click para el boton de todas las cards, para que cuando se presione "comprar", se ejecute la funcion, se valide el numero ingresado y de ser correcto se realice la compra*/
@@ -47,8 +48,7 @@ function comprar(index) {
     })
 }
 
-let finalizarCompra = document.getElementById("btnFinalizarCompra")
-
+let finalizarCompra = document.getElementById("btnFinalizarCompra");
 finalizarCompra.addEventListener("click", ()=>{
-    alert("Finalizaste tu compra con exito")
+alert(`Finalizaste tu compra con exito y el precio total es: $${total}`)
 })
